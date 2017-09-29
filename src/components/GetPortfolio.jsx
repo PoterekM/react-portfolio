@@ -2,19 +2,23 @@ import React from "react";
 import { connect } from "react-redux";
 import { fetchProfile } from "./../actions";
 
-const GetPortfolio = ({ dispatch, user }) => {
-  return(
-    <div>
-       <button onClick={() => {dispatch(fetchProfile())}}>View Github Details</button>
-    </div>
+class GetPortfolio extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick() {
+    this.props.dispatch(fetchProfile());
+  }
+
+  render () {
+
+    return (
+      <div>
+        <button onClick={this.handleClick}> Github </button>
+      </div>
   );
 }
-
-const mapStateToProps = state => {
-  console.log(state)
-  return {
-    user: state
-  };
-};
-
-export default connect(mapStateToProps)(GetPortfolio);
+}
+export default connect()(GetPortfolio);

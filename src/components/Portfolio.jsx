@@ -6,6 +6,7 @@ const Portfolio = ({ dispatch, user }) => {
   return(
     <div>
      <hr/>
+
     <a href="https://github.com/PoterekM">
       <img src={user.user.avatar_url}/>
       <h1>{user.user.login}</h1>
