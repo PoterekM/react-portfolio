@@ -6,7 +6,9 @@ const Portfolio = ({ dispatch, user }) => {
   return(
     <div>
        <button onClick={() => {dispatch(fetchProfile())}}>View Profile</button>
-     {user.user.login}
+     UserName: {user.user.login}
+     User Location: {user.user.location}
+     user Image: <img src={user.user.avatar_url}/>
     </div>
   );
 }
