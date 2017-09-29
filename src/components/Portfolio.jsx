@@ -3,10 +3,13 @@ import { connect } from "react-redux";
 import GetPortfolio from "./GetPortfolio";
 
 const Portfolio = ({ dispatch, user }) => {
+
+  console.log(user.userId)
+
+
   return(
     <div>
      <hr/>
-
     <a href="https://github.com/PoterekM">
       <img src={user.user.avatar_url}/>
       <h1>{user.user.login}</h1>
