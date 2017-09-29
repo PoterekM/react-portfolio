@@ -7,6 +7,7 @@ export default (state = defaultState, action) => {
   let user;
   let newUser;
   let userId;
+  let newState;
   switch (action.type) {
     case types.REQUEST_GIT:
     newUser = {

@@ -26,7 +26,11 @@ export function fetchProfile(dispatch) {
       response => response.json(),
       error => console.log("An error occured.", error)
     ).then(function(json) {
-      console.log("CHECK OUT THIS SWEET API RESPONSE:", json)
+      if (json.status === "success") {
+
+        const user = json.name
+        console.log("CHECK OUT THIS SWEET API RESPONSE:", json)
+      }
     });
   };
 }
