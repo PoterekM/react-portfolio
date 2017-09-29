@@ -2,7 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import { fetchProfile } from "./../actions";
 
-const Portfolio = ({ dispatch, profile }) => {
+const Portfolio = ({ dispatch, user }) => {
   return(
     <div>
        <button onClick={() => {dispatch(fetchProfile())}}>View Profile</button>
@@ -12,7 +12,7 @@ const Portfolio = ({ dispatch, profile }) => {
 
 const mapStateToProps = state => {
   return {
-    profile: state
+    user: state
   };
 };
 

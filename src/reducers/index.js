@@ -1,9 +1,9 @@
 import constants from "./../constants";
-const { types } = constants;
+const { defaultState, types } = constants;
 
 
 
-export default (state = {}, action) => {
+export default (state = defaultState, action) => {
   let user;
   let newUser;
   let userId;

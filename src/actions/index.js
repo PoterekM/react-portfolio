@@ -15,6 +15,7 @@ export const showGit = (user, userId) => ({
 
 export function fetchProfile(dispatch) {
   return function (dispatch) {
+    let user;
     const userId = v4();
     dispatch(requestGit(userId));
     return fetch("https://api.github.com/users/poterekm", {
