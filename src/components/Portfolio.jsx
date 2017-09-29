@@ -13,11 +13,13 @@ const Portfolio = ({ dispatch, user }) => {
   } else {
     formAreaContent =
     <div>
-      <a href="https://github.com/PoterekM">
+      <a target="_blank" href="https://github.com/PoterekM">
         <img src={user.user.avatar_url}/>
-        <h1>{user.user.login}</h1>
-        <h4>{user.user.location}</h4>
+        <h1>{user.user.name}</h1>
       </a>
+      <h4>{user.user.login}</h4>
+      <h4>{user.user.location}</h4>
+      <h6>Public Repositories: {user.user.public_repos}</h6>
     </div>
   }
 
