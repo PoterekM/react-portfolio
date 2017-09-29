@@ -13,6 +13,7 @@ export default (state = defaultState, action) => {
     newUser = {
       isFetching: true,
       userId: action.userId,
+
     };
     newState = Object.assign({}, state, {
       [action.userId]: newUser

@@ -6,7 +6,7 @@ const Portfolio = ({ dispatch, user }) => {
   return(
     <div>
        <button onClick={() => {dispatch(fetchProfile())}}>View Profile</button>
-     {user.user}
+     {user.user.login}
     </div>
   );
 }
