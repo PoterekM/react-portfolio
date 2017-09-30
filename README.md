@@ -9,15 +9,6 @@ This is my personal portfolio that uses React and the GitHub API in order to cre
 ## Installation
 You can visit the application through this link:
 
-Api call for user profile
-https://api.github.com/users/poterekm
-
-APi call for starred repository
-https://api.github.com/users/poterekm/starred
-
-Potentail api call for last year of git history
-https://api.github.com/repos/:owner/poterekm/stats/commit_activity
-
 OR:
 In Terminal,
 * `git clone https://github.com/PoterekM/poterekm-portfolio`

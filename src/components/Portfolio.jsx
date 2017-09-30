@@ -2,6 +2,7 @@ import React from "react";
 import { connect } from "react-redux";
 import GetPortfolio from "./GetPortfolio";
 
+
 const Portfolio = ({ dispatch, user }) => {
   let formAreaContent;
   console.log(user.userId)
@@ -23,9 +24,9 @@ const Portfolio = ({ dispatch, user }) => {
     </div>
   }
 
-
   return(
     <div>
+
      {formAreaContent}
     </div>
   );

@@ -31,7 +31,7 @@ module.exports = {
 
   module: {
     rules: [
-        {
+      {
         test: /\.jsx?$/,
         loader: "babel-loader",
         exclude: /node_modules/,
@@ -46,22 +46,16 @@ module.exports = {
         }
       },
       {
-        test: /\.css$/,
-        loader: 'style-loader'
-      },
-      {
-        test: /\.css$/,
-        loader: 'css-loader',
-        exclude: resolve(__dirname, "src/styles/styles.css"),
-        options: {
-         modules: true,
-         localIdentName: '[name]__[local]___[hash:base64:5]'
-       }
-     },
-     {
-       test: resolve(__dirname, "src/styles/styles.css"),
-       loader: 'css-loader'
-     }
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'url-loader',
+            options: {
+              limit: 8192
+            }
+          }
+        ]
+      }
     ]
   },
 
@@ -71,7 +65,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template:'template.ejs',
       appMountId: 'react-app-root',
-      title: 'Portfolio',
+      title: 'React Portfolio',
       filename: resolve(__dirname, "build", "index.html"),
     }),
   ]
