@@ -44,7 +44,7 @@ In Terminal,
 * Style Application.
 
 ## Program Preview
-![Preview of application](./src/images/project.png)
+![Preview of application](./src/images/Project.png)
 
 ## Technologies Used
 * React
