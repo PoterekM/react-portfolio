@@ -13,7 +13,7 @@ function Header () {
     <div style={headerStyle}>
       <h1>Michelle Poterek's Portfolio</h1>
 
-    <Link to="/">About</Link> | <Link to="/cool_projects">Cool Projects I like</Link>
+    <Link to="/">About</Link> | <Link to="/cool_projects">Cool Projects I like</Link> | <Link to="/resume">Resume</Link>
     </div>
   )
 

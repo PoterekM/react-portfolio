@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import Header from "./Header";
 import StarredRepositories from "./StarredRepositories";
 import Portfolio from "./Portfolio";
+import Resume from "./Resume";
 import Penicillum from './../images/penicillium.jpg';
 
 function App(){
@@ -21,6 +22,7 @@ function App(){
     <Switch>
       <Route exact path="/" component={Portfolio}/>
       <Route exact path="/cool_projects" component={StarredRepositories}/>
+      <Route exact path="/resume" component={Resume}/>
     </Switch>
     </div>
   );
