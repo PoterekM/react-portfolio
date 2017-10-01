@@ -13,6 +13,7 @@ function App(){
     width: "100%",
     height: "100%",
     position: "fixed",
+    textShadow: "1px 1px #6BA099"
   }
   return (
     <div style={myStyles}>

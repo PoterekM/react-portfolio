@@ -5,10 +5,12 @@ import Asp from "./../images/AspergillusCLEISTOTHECIA.jpg"
 
 function Header () {
 
-
+  var headerStyle = {
+    backgroundColor: "rgba(223, 149, 175, .4)",
+  }
 
   return(
-    <div>
+    <div style={headerStyle}>
       <h1>Michelle Poterek's Portfolio</h1>
 
     <Link to="/">About</Link> | <Link to="/cool_projects">Cool Projects I like</Link>
