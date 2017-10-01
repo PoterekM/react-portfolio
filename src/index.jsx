@@ -18,10 +18,14 @@ const store = createStore(
   )
 );
 
+
 ReactDOM.render(
   <Provider store={store}>
     <HashRouter>
-      <App />
+      <div>
+        <App />
+      </div>
+
     </HashRouter>
   </Provider>,
   document.getElementById("react-app-root")
