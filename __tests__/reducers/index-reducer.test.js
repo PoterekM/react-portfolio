@@ -2,14 +2,19 @@ import constants from "./../../src/constants";
 import * as actions from "./../../src/actions";
 import profile from './../../src/reducers/index';
 
-describe("index reducer", () => {
+describe("profile index reducer", () => {
   const { defaultState, types } = constants;
-  test('should return equivalent state if no action type is recognized', () => {
+  test('it should ensure state does not change if no action is triggered', () => {
     expect(profile([], { type: null })).toEqual([]);
   });
 
-  test('imported value should match action type string', () => {
-    expect(constants.SHOW_GIT).toEqual('Michelle');
+  test('it should update state upon action to show profile', () => {
+    
+    const newUser = {
+      isFetching: true,
+      userId: action.userId,
+    };
+    expect(profile(defaultState.profile, action) [action.userId]).toEqual(["Michelle", "turds"]);
   });
 
 });
