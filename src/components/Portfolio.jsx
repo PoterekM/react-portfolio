@@ -26,8 +26,7 @@ const Portfolio = ({ dispatch, user }) => {
 
   return(
     <div>
-
-     {formAreaContent}
+      {formAreaContent}
     </div>
   );
 }
