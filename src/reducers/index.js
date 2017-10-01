@@ -3,7 +3,7 @@ const { defaultState, types } = constants;
 
 
 
-export default (state = defaultState, action) => {
+const profile = (state = defaultState, action) => {
   let user;
   let newUser;
   let userId;
@@ -33,3 +33,5 @@ export default (state = defaultState, action) => {
   }
 
 }
+
+export default profile;
