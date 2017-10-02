@@ -5,10 +5,9 @@ import { fetchProfile } from "./../actions";
 class GetPortfolio extends React.Component {
   constructor(props) {
     super(props);
-    this.handleClick = this.handleClick.bind(this);
   }
 
-  handleClick() {
+  componentWillMount() {
     this.props.dispatch(fetchProfile());
   }
 
