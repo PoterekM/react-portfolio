@@ -4,16 +4,11 @@ import GetPortfolio from "./GetPortfolio";
 
 
 const Portfolio = ({ dispatch, user }) => {
-  let formAreaContent;
-  console.log(user.userId)
-  if (user === "Michelle") {
-    formAreaContent =
-      <div>
-          <GetPortfolio/>
-      </div>
-  } else {
-    formAreaContent =
+
+
+  return(
     <div>
+      <GetPortfolio/>
       <a target="_blank" href="https://github.com/PoterekM">
         <img src={user.avatar_url}/>
         <h1>{user.name}</h1>
@@ -21,12 +16,6 @@ const Portfolio = ({ dispatch, user }) => {
       <h4>{user.login}</h4>
       <h4>{user.location}</h4>
       <h6>Public Repositories: {user.public_repos}</h6>
-    </div>
-  }
-
-  return(
-    <div>
-      {formAreaContent}
     </div>
   );
 }
